@@ -1,9 +1,10 @@
-function[A] = competitionD_cl(x,y,D,b,sigma_comp, x_cc)   
-% the function calculates competition between two D-dimension phenotype clusters
-% x,y - clusters, where x influences on y
-% D - number of dimensions
+function[A] = competitionD_cl(x, y, D, b, sigma_comp, x_cc)   
+% the function calculates competition between two clusters
+% x,y - phenotypic coordinates of clusters, where x influences on y
+% D - dimencionality of the phenotypic space
 % b - mutation coefficients
-% x_cc - carrying capacity point with D-coordinates
+% sigma_comp - width of competition kernel
+% x_cc - current location of CCC
  
 B = 0;
 S = 0;
